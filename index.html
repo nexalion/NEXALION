@@ -36,11 +36,28 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.2);
         }
 
+        .brand-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .brand-logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            background-color: #ffffff;
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(88, 166, 255, 0.2);
+        }
+
         h1 {
             color: var(--text-bright);
             font-size: 2.2rem;
-            margin-top: 0;
-            margin-bottom: 5px;
+            margin: 0;
             letter-spacing: -0.5px;
         }
 
@@ -48,13 +65,15 @@
             color: var(--accent-color);
             font-size: 1.1rem;
             font-weight: 500;
-            margin-bottom: 25px;
+            margin-top: 5px;
         }
 
         .info-section {
             margin-bottom: 25px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 20px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
         }
 
         .info-row {
@@ -133,8 +152,12 @@
 <body>
 
 <div class="container">
-    <h1>NEXALION</h1>
-    <div class="subtitle">Digital Services Brand by Taha Kashif</div>
+    <div class="brand-header">
+        <!-- Aapka Naya Logo Link Yahan Add Kar Diya Hai -->
+        <img src="https://avatars.githubusercontent.com/u/183130893?s=400&u=c5af2a02ae57aa6c3fc64a1131f53179f4437071&v=4" alt="NEXALION Logo" class="brand-logo">
+        <h1>NEXALION</h1>
+        <div class="subtitle">Digital Services Brand by Taha Kashif</div>
+    </div>
 
     <div class="info-section">
         <div class="info-row"><span class="info-label">Name:</span> M. Taha Kashif</div>
